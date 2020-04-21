@@ -1,0 +1,123 @@
+html ,body{
+    width: 100%;
+}
+
+/*  Navbar  */
+.navbar{
+    background-color: #000080;
+}
+ul li{
+    margin-left: 25px;
+}
+#ind{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(#FF9933, white, #138808);
+    padding: 6px;
+    color: #000080;
+}
+
+/*  Main    */
+/*  Main of Index.html  Starts*/
+.header-info{
+    margin: auto;
+    padding: 5px;
+}
+#info{
+    color: red;
+    text-align: center;
+    font-family: cursive;
+}
+.col{
+    margin: 20px;
+    text-align: center;
+    padding: 50px;
+    display: block;
+}
+.div-box{
+    font-size: 20px;
+}
+.border{
+    border-radius: 10%;;
+}
+
+#border-info{
+    background-color: rgb(139, 208, 219);
+}
+#border-success{
+    background-color: rgb(147, 211, 162);
+}
+#border-danger{
+    background-color: rgb(237, 154, 162);
+}
+#border-warn{
+    background-color: rgb(236, 238, 135);
+    border-color: yellow;
+}
+hr{
+    border: solid red 2px;
+}
+
+/*  Map Portion */
+#indian-map{
+    text-align: center;
+}
+img{
+    width: 800px;
+    height: 600px;
+    align-self: center;
+    border: dotted skyblue 1px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*  Main of Index.html  Starts*/
+
+
+/*  Main of Symptoms.html  Starts*/
+/*  Main of Symptoms.html  Ends*/
+
+
+/*  Main of Preventions.html  Starts*/
+/*  Main of Preventions.html  Ends*/
+
+
+/*  Main of Helpline.html  Starts*/
+h5{
+    background-color: burlywood;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    color: "red";
+}
+#marquee{
+    width: 60%;
+    direction: left;
+    height: 30%;
+}
+/*  Main of Helpline.html  Ends*/
+
+
+/*  Media Object for diffrent devices   */
+@media (max-width: 991px) {
+    /* start of large tablet styles */
+        img{
+            width: 600px;
+            height: 500px;
+        }
+}
+    
+@media (max-width: 767px) {
+    /* start of medium tablet styles */
+    img{
+        width: 450px;
+        height: 300px;
+    }
+}
+    
+@media (max-width: 479px) {
+    /* start of phone styles */
+    img{
+        width: 350px;
+        height: 250px;
+    }  
+}
