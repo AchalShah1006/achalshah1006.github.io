@@ -11,12 +11,14 @@ ul li{
 }
 #ind{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF9933), color-stop(white), to(#138808));
     background-image: linear-gradient(#FF9933, white, #138808);
     padding: 6px;
     color: #000080;
 }
 
 /*  Main    */
+
 /*  Main of Index.html  Starts*/
 .header-info{
     margin: auto;
@@ -72,8 +74,18 @@ img{
 
 /*  Main of Index.html  Starts*/
 
+/*  Common Stylings */
+h5, #main-alert{
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    color: red;
+    font-weight: bold;
+}
+
 
 /*  Main of Symptoms.html  Starts*/
+
 /*  Main of Symptoms.html  Ends*/
 
 
@@ -84,10 +96,6 @@ img{
 /*  Main of Helpline.html  Starts*/
 h5{
     background-color: burlywood;
-    margin: 5px;
-    text-align: center;
-    padding: 5px;
-    color: "red";
 }
 #marquee{
     width: 60%;
@@ -98,6 +106,7 @@ h5{
 
 
 /*  Media Object for diffrent devices   */
+
 @media (max-width: 991px) {
     /* start of large tablet styles */
         img{
