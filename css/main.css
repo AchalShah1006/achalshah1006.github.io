@@ -75,7 +75,7 @@ img{
 /*  Main of Index.html  Starts*/
 
 /*  Common Stylings */
-h5, #main-alert{
+h5, #alert{
     margin: 5px;
     text-align: center;
     padding: 5px;
@@ -85,7 +85,25 @@ h5, #main-alert{
 
 
 /*  Main of Symptoms.html  Starts*/
-
+.top-div{
+    margin: 20px;
+    text-align: center;
+}
+.s-list{
+    padding: 20px;
+}
+strong{
+    
+}
+.list-header{
+    margin: 5px;
+    list-style: square;
+    color: darkgreen;
+    font-weight: bold;
+}
+.list-desc{
+    color: rgb(90, 9, 158);
+}
 /*  Main of Symptoms.html  Ends*/
 
 
