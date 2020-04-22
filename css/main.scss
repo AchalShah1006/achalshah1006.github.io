@@ -1,0 +1,49 @@
+/*  Variable Example    */
+$weight: bold;
+$color: red;
+
+h5{
+    color: $color;
+    font-weight: $weight;
+}
+#alert{
+    color: $color;
+    font-weight: $weight;
+}
+#tag{
+    font-size: 20px;
+    color: $color;
+    font-weight: $weight;
+}
+/*  Nesting Example */
+.div-box{
+    #border-info{
+        background-color: rgb(139, 208, 219);
+    }
+    #border-success{
+        background-color: rgb(147, 211, 162);
+    }
+    #border-danger{
+        background-color: rgb(237, 154, 162);
+    }
+    #border-warn{
+        background-color: rgb(236, 238, 135);
+        border-color: yellow;
+    }
+}
+
+/*  Inheritance Example */
+%row{
+    font-size: 14px;
+    text-align: left;
+}
+
+.odd-row{
+    @extend %row;
+    color: black;
+}
+.even-row{
+    @extend %row;
+    color: white;
+    background-color: darken($color: #636363, $amount: 0);
+}
