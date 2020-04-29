@@ -11,6 +11,8 @@
 
   <!--  Font Awesome -->
   <script src="https://kit.fontawesome.com/17598109e2.js" crossorigin="anonymous"></script>
+  <!--  Google Font API -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,8 +63,21 @@
       <div class="table-cell">
         <div class="container">
           <img class="m-4 profile-img" src="assets/img/profile.jpg" alt="Achal Shah">
-          <h6 class="intro-title mb-4">I am Achal Shah</h6>
           <p class="intro-subtitle"><span class="text-slider-items">Full Stack Developer!, Web Developer!</span><strong class="text-slider"></strong></p>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/achal-shah-417a14133/" target="_blank">
+            <i class="fab fa-linkedin text-primary "></i>
+          </a>
+          <a href="https://www.instagram.com/shah_achal/" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a href="https://github.com/AchalShah1006" target="_blank">
+            <i class="fab fa-github-square text-light"></i>
+          </a>
+          <a href="https://www.facebook.com/shahachal.32" target="_blank">
+            <i class="fab fa-facebook-square text-primary"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -75,7 +90,7 @@
     <section id="about" class="about-mf sect-pt4 route">
       <div class="container">
         <div class="title-box-2">
-          <h4 class="title-left">
+          <h4 class="title-a">
             About me
           </h4>
         </div>
@@ -100,14 +115,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
+                <div class="col-md-6 about-me">
+                  <div class=" pt-4 pt-md-0">
                     
-                    <p class="lead">
+                    <p class="self-info">
                       I am currently living in Ahmedabad, Gujarat ,INDIA.
                     </p>
-                    <p class="lead">
-                      Pursuing as Computer Engineering student B.Tech at <a href="https://www.gtu.ac.in" target="_blank" class="link">Gujarat Technical University</a>.
+                    <p class="self-info">
+                      Currently pursuing as Computer Engineering student B.Tech at <a href="https://www.gtu.ac.in" target="_blank" ld="gtu">Gujarat Technical University</a>.
                     </p>
                     
                   </div>
@@ -140,7 +155,7 @@
               <div class="service-content">
                 <h2 class="s-title">Web Design</h2>
                 <p class="s-description text-center">
-                  HTML, CSS, Bootstrap 4, MaterialUi.
+                  HTML, CSS, Bootstrap 4, <span class="intrest">MaterialUi</span>.
                 </p>
               </div>
             </div>
@@ -153,7 +168,7 @@
               <div class="service-content">
                 <h2 class="s-title">Web Development</h2>
                 <p class="s-description text-center">
-                  JavaScript, ReactJS, NodeJs, Flask, PHP.
+                  PHP, JavaScript, <span class="intrest">ReactJS, NodeJs, Flask</span>.
                 </p>
               </div>
             </div>
@@ -179,7 +194,7 @@
               <div class="service-content">
                 <h2 class="s-title">DataBase</h2>
                 <p class="s-description text-center">
-                  MySql, MongoDB.
+                  MySql, <span class="intrest">MongoDB</span>.
                 </p>
               </div>
             </div>
@@ -189,35 +204,35 @@
     </section><!-- End Skills -->
 
     <!--    Project    -->
-    <section id="project" class="portfolio-mf sect-pt4 route">
+    <section id="project">
       <div class="container">
-        <div class="title-box-2">
-          <h4 class="title-left">
-            Projects
-          </h4>
         <div class="row">
-          <div class="col-md-6  partition">
-            <div class="project-box">
-              <div class="service-ico">
-                <h6>Covid-19 Tracker India</h6>
-              </div>
-              <div class="service-content">
-                <img id="projects-img" src="assets/img/covid19.png" alt="Covid-19 Tracker India">
-              </div>
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Projects
+              </h3>
             </div>
           </div>
-          <div class="col-md-6 partition">
+          <div class="col-md-6 mb-5 p-3">
             <div class="project-box">
-              <div class="service-ico">
-                <h6>AIO-BOT</h6>
-              </div>
-              <div class="service-content">
-                <img id="projects-img" src="assets/img/aio-bot.png" alt="Covid-19 Tracker India">
+              <div class="box shadow">
+                <a href="https://github.com/jashmerchant/AIO-BOT" target="_blank">
+                  <img src="assets/img/aio-bot.png" alt="AIO-BOT" class="img-fluid">
+                </a>
+              </div>  
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 p-3">
+            <div class="project-box">
+              <div class="box shadow">
+                <a href="https://github.com/AchalShah1006/Covid19-Tracker-India" target="_blank">
+                  <img src="assets/img/covid19.png" alt="Covid-19 Tracker India" class="img-fluid">
+                </a>
               </div>
             </div>
           </div>
         </div>
-       
       </div>
     </section><!-- End Project Section -->
   </main><!-- End #main -->
