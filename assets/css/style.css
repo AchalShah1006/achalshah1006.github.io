@@ -778,6 +778,11 @@ a:hover {
 /*
   ---------Projects------------- 
 */
+
+.project-mf{
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
 .box{
   border: 2px solid;
  
@@ -786,7 +791,6 @@ a:hover {
   height: 300px;
   width: 100%;
 }
-
 
 
 /*--------------------------------------------------------------
