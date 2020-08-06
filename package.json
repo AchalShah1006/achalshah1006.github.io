@@ -1,4 +1,5 @@
 {
+  "homepage": "http://AchalShah1006.github.io/Portfolio-Reactjs",
   "name": "react-boilerplate",
   "version": "4.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
@@ -13,6 +14,8 @@
   "author": "Max Stoiber",
   "license": "MIT",
   "scripts": {
+      "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
     "analyze": "node ./internals/scripts/analyze.js",
