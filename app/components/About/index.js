@@ -105,7 +105,7 @@ export default function MyAbout() {
         >
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
-            to="/resume"
+            to="/Portfolio-ReactJs/resume"
           >
             <Button
               className={classes.btn}

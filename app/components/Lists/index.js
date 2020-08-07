@@ -11,7 +11,12 @@ import Icon from '@material-ui/core/Icon';
 import { FaHome, FaIdBadge, FaTasks, FaFolderOpen } from 'react-icons/fa';
 
 function Links() {
-  const routes = ['/', '/profile', '/skills', '/work'];
+  const routes = [
+    '/Portfolio-ReactJs/',
+    '/Portfolio-ReactJs/profile',
+    '/Portfolio-ReactJs/skills',
+    '/Portfolio-ReactJs/work',
+  ];
   const li = [
     <FaHome style={{ verticalAlign: 'top' }} />,
     <FaIdBadge style={{ verticalAlign: 'top' }} />,
