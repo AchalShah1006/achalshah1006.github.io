@@ -1,6 +1,6 @@
 
 ## Quick start
-Check Live: `https://achalshah1006.github.io/Portfolio-ReactJs/`
+Check Live: https://achalshah1006.github.io/Portfolio-ReactJs/
 
 1.  Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
 2.  Clone this repo using `git clone https://github.com/AchalShah1006/Portfolio-ReactJs.git`
