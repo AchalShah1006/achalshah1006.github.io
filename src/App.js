@@ -27,11 +27,11 @@ export default function PersistentDrawerLeft() {
       <div className={classes.root}> 
         <main className={classes.section}>
           <Switch>
-            <Route exact path="/Portfolio-ReactJs/" component={Home} />
-            <Route path="/Portfolio-ReactJs/profile" component={Profile} />
-            <Route path="/Portfolio-ReactJs/skills" component={Skills} />
-            <Route path="/Portfolio-ReactJs/work" component={Work} />
-            <Route path="/Portfolio-ReactJs/resume" component={Resume} />
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+            <Route path={process.env.PUBLIC_URL + '/profile'} component={Profile} />
+            <Route path={process.env.PUBLIC_URL + '/skills'} component={Skills} />
+            <Route path={process.env.PUBLIC_URL + '/work'} component={Work} />
+            <Route path={process.env.PUBLIC_URL + '/resume'} component={Resume} />
           </Switch>
         </main>
       </div>

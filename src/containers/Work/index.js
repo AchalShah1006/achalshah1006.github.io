@@ -8,6 +8,8 @@ import covid19 from '../../static/images/covid19.png';
 import chatbot from '../../static/images/aio-bot.png';
 import portfolio from '../../static/images/portfolio.png';
 import portfolio2 from '../../static/images/Portfolio-2.png';
+import stuPortal from '../../static/images/studentPortal.png';
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -78,6 +80,7 @@ export default function Work() {
           <Project
             title="Student Portal"
             para="Website for college student to check thier profiles."
+            img={stuPortal}
           />
         </Grid>
       </Grid>

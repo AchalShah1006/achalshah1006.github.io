@@ -35,10 +35,8 @@ export default function Projects(props) {
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
-          children="none"
           className={classes.media}
           image={props.img}
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
