@@ -6,10 +6,10 @@ import { FaHome, FaIdBadge, FaTasks, FaFolderOpen } from 'react-icons/fa';
 
 function Links({handler}) {
   const routes = [
-    '/Portfolio-ReactJs/',
-    '/Portfolio-ReactJs/profile',
-    '/Portfolio-ReactJs/skills',
-    '/Portfolio-ReactJs/work',
+    '/',
+    'profile',
+    'skills',
+    'work',
   ];
   const li = [
     <FaHome style={{ verticalAlign: 'top' }} />,

@@ -1,5 +1,5 @@
-/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import {
   makeStyles,
@@ -93,7 +93,7 @@ const useStyles = makeStyles(theme => ({
 
 const socialColor = ['skyblue', 'pink', 'white', '#2867B2'];
 const socialLink = [
-  'https://www.facebook.com/shahachal.32/',
+  'https://www.facebook.com/shahachal.32',
   'https://www.instagram.com/shah_achal/',
   'https://github.com/AchalShah1006',
   'https://www.linkedin.com/in/achalshah32/',
@@ -169,7 +169,7 @@ function Navigation({ref}) {
           <div className={classes.social}>
             {socialList.map((text, index) => (
               <a
-                  key={index}
+                key={index}
                 target="_blank"
                 href={socialLink[index]}
                 style={{ width: "25%", verticalAlign: "middle" }}

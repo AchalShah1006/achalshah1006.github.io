@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+// import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -48,11 +49,16 @@ export default function Projects(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        {props.view == "" ? (<Button size="small" color="primary" disabled={true}>
           <a href={props.view} target="_blank" className={classes.link}>
             View
           </a>
-        </Button>
+        </Button>):(<Button size="small" color="primary">
+          <a href={props.view} target="_blank" className={classes.link}>
+            View
+          </a>
+        </Button>)}
+        
       </CardActions>
     </Card>
   );

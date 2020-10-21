@@ -81,6 +81,7 @@ export default function Work() {
             title="Student Portal"
             para="Website for college student to check thier profiles."
             img={stuPortal}
+            view=""
           />
         </Grid>
       </Grid>

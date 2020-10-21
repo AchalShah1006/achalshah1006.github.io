@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Home from './containers/Home';
 import Profile from './containers/Profile';
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function PersistentDrawerLeft() {
+export default function App() {
   const classes = useStyles();
 
   return (
@@ -27,11 +27,11 @@ export default function PersistentDrawerLeft() {
       <div className={classes.root}> 
         <main className={classes.section}>
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-            <Route path={process.env.PUBLIC_URL + '/profile'} component={Profile} />
-            <Route path={process.env.PUBLIC_URL + '/skills'} component={Skills} />
-            <Route path={process.env.PUBLIC_URL + '/work'} component={Work} />
-            <Route path={process.env.PUBLIC_URL + '/resume'} component={Resume} />
+            <Route exact path='/' component={Home} />
+            <Route path='/profile' component={Profile} />
+            <Route path='/skills' component={Skills} />
+            <Route path='/work' component={Work} />
+            <Route path='/resume' component={Resume} />
           </Switch>
         </main>
       </div>
