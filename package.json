@@ -1,5 +1,5 @@
 {
-  "homepage": "http://AchalShah1006.github.io/Portfolio-ReactJs",
+  "homepage": "http://AchalShah1006.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.1",
   "description": "Portfolio with reactjs.",
@@ -23,7 +23,7 @@
     "npmcheckversion": "node ./internals/scripts/npmcheckversion.js",
     "preinstall": "npm run npmcheckversion",
     "prebuild": "npm run build:clean",
-    "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
+    "build": "cross-env NODE_ENV=development webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:clean": "rimraf ./build",
     "start": "cross-env NODE_ENV=development node server",
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
