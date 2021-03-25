@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
@@ -17,7 +18,7 @@ function Links({ handler }) {
     <List>
       {['Home', 'About', 'Skills', 'Work'].map((text, index) => (
         <Link
-          key={index}
+          key={routes[index]}
           to={routes[index]}
           style={{ display: 'block', textDecoration: 'none' }}
           onClick={handler}
@@ -36,6 +37,8 @@ function Links({ handler }) {
   );
 }
 
-Links.propTypes = {};
+Links.propTypes = {
+  handler: PropTypes.func,
+};
 
 export default Links;

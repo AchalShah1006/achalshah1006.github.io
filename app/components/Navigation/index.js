@@ -106,7 +106,7 @@ const socialList = [
   <FaLinkedin />,
 ];
 
-function Navigation({ ref }) {
+function Navigation() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -170,7 +170,7 @@ function Navigation({ ref }) {
           <div className={classes.social}>
             {socialList.map((text, index) => (
               <Button
-                key={index}
+                key={socialColor[index]}
                 target="_blank"
                 href={socialLink[index]}
                 style={{

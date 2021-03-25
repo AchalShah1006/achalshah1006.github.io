@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -16,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function DataList(props) {
+function DataList(props) {
   const classes = useStyles();
   return (
     <ListItem alignItems="flex-start" className={classes.root}>
@@ -26,7 +27,7 @@ export default function DataList(props) {
       <ListItemText
         primary={props.title}
         secondary={
-          <>
+          <span>
             <Typography
               component="span"
               variant="h6"
@@ -36,9 +37,18 @@ export default function DataList(props) {
               {props.heading}
             </Typography>
             {props.content}
-          </>
+          </span>
         }
       />
     </ListItem>
   );
 }
+
+DataList.propTypes = {
+  link: PropTypes.string,
+  title: PropTypes.string,
+  heading: PropTypes.string,
+  content: PropTypes.string,
+};
+
+export default DataList;

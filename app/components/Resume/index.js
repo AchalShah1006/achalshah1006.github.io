@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Document, Page } from 'react-pdf';
 import { FaDownload } from 'react-icons/fa';
@@ -71,10 +71,7 @@ function Resume() {
           Internship Certificate
         </Button>
       </div>
-      <Document
-        file={`data:application/pdf;base64,${resume}`}
-        onLoadError={console.error}
-      >
+      <Document file={`data:application/pdf;base64,${resume}`}>
         <Page className={classes.canvas} pageNumber={1} />
       </Document>
     </>

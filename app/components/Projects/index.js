@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
@@ -36,7 +37,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Projects(props) {
+function Projects(props) {
   const classes = useStyles();
 
   return (
@@ -74,3 +75,12 @@ export default function Projects(props) {
     </Grid>
   );
 }
+
+Projects.propTypes = {
+  img: PropTypes.string,
+  para: PropTypes.string,
+  title: PropTypes.string,
+  view: PropTypes.string,
+};
+
+export default Projects;

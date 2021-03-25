@@ -41,7 +41,7 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
     width: '100%',
     backgroundColor: '#1A1A1A',
@@ -57,9 +57,9 @@ const useStyles = makeStyles(theme => ({
     height: '32px',
     width: '32px',
   },
-}));
+});
 
-export default function ScrollableTabsButtonForce() {
+function ScrollableIcons() {
   const classes = useStyles();
   const [value, setValue] = useState(0);
 
@@ -125,3 +125,5 @@ export default function ScrollableTabsButtonForce() {
     </div>
   );
 }
+
+export default ScrollableIcons;
