@@ -96,7 +96,7 @@ function ScrollableIcons() {
           className={classes.tabs}
         >
           <Tab
-            label="Htmls"
+            label="Html5"
             icon={<FaHtml5 className={classes.svg} />}
             style={{ color: '#e44d26' }}
           />
