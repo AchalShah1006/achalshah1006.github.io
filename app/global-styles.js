@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   #app {
     background-color: #fafafa;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 340px;
   }
 
   p,
@@ -27,6 +27,15 @@ const GlobalStyle = createGlobalStyle`
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
+
+  h2 {
+    font-family: cursive, sans-serif
+  }
+
+  canvas {
+    border: 1px solid black;
+  }
+
 `;
 
 export default GlobalStyle;

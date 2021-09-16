@@ -14,6 +14,7 @@ import {
   IconButton,
   Divider,
   Button,
+  List,
 } from '@material-ui/core';
 import {
   FaInstagram,
@@ -31,16 +32,17 @@ const drawerWidth = 240;
 // Style React Components
 const useStyles = makeStyles(theme => ({
   appBar: {
-    transition: theme.transitions.create(['margin', 'width'], {
+    zIndex: theme.zIndex.drawer + 1,
+    transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
   },
   appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.easeOut,
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
@@ -51,7 +53,31 @@ const useStyles = makeStyles(theme => ({
     display: 'none',
   },
   drawer: {
+    width: drawerWidth,
     flexShrink: 0,
+    whiteSpace: 'nowrap',
+  },
+  drawerOpen: {
+    width: drawerWidth,
+    backgroundColor: '#1A1A1A',
+    color: '#FFF',
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  drawerClose: {
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    backgroundColor: '#1A1A1A',
+    color: '#FFF',
+    overflowX: 'hidden',
+    width: theme.spacing(7) + 1,
+    [theme.breakpoints.up('sm')]: {
+      width: theme.spacing(9) + 1,
+    },
   },
   drawerPaper: {
     width: drawerWidth,
@@ -85,6 +111,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
   },
   typo: {
+    display: 'block',
     fontSize: '24px',
     '& > *': {
       verticalAlign: 'middle',
@@ -147,12 +174,16 @@ function Navigation() {
         </AppBar>
 
         <Drawer
-          className={classes.drawer}
-          variant="persistent"
-          anchor="left"
-          open={open}
+          variant="permanent"
+          className={clsx(classes.drawer, {
+            [classes.drawerOpen]: open,
+            [classes.drawerClose]: !open,
+          })}
           classes={{
-            paper: classes.drawerPaper,
+            paper: clsx({
+              [classes.drawerOpen]: open,
+              [classes.drawerClose]: !open,
+            }),
           }}
         >
           <div className={classes.drawerHeader}>
@@ -165,9 +196,11 @@ function Navigation() {
             </IconButton>
           </div>
           <Divider className={classes.divider} />
-          <Lists handler={handleDrawerClose} />
+          <List className={classes.list}>
+            <Lists handler={handleDrawerClose} />
+          </List>
           <Divider className={classes.divider} />
-          <div className={classes.social}>
+          <div className={clsx(classes.hide, open && classes.social)}>
             {socialList.map((text, index) => (
               <Button
                 key={socialColor[index]}
@@ -189,15 +222,21 @@ function Navigation() {
             ))}
           </div>
           <Divider className={classes.divider} />
-          <Typography
-            style={{ textAlign: 'center', fontSize: '16px', marginTop: '1rem' }}
-          >
-            All Rights Reserved
-          </Typography>
-          <Typography style={{ textAlign: 'center', fontSize: '16px' }}>
-            Copyright &copy;{' '}
-            <span style={{ color: 'orange' }}> Achal Shah</span>
-          </Typography>
+          <div className={clsx(classes.hide, open && classes.typo)}>
+            <Typography
+              style={{
+                textAlign: 'center',
+                fontSize: '16px',
+                marginTop: '1rem',
+              }}
+            >
+              All Rights Reserved
+            </Typography>
+            <Typography style={{ textAlign: 'center', fontSize: '16px' }}>
+              Copyright &copy;{' '}
+              <span style={{ color: 'orange' }}> Achal Shah</span>
+            </Typography>
+          </div>
         </Drawer>
       </div>
     </ClickAwayListener>

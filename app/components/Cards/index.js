@@ -75,4 +75,4 @@ Cards.propTypes = {
   code: PropTypes.string,
 };
 
-export default Cards;
+export default React.memo(Cards);

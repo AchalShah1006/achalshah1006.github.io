@@ -6,7 +6,7 @@ import Icon from '@material-ui/core/Icon';
 import { FaHome, FaIdBadge, FaTasks, FaFolderOpen } from 'react-icons/fa';
 
 function Links({ handler }) {
-  const routes = ['/', '/about', '/skills', '/work'];
+  const routes = ['/', '/profile', '/skills', '/work'];
   const li = [
     <FaHome style={{ verticalAlign: 'top' }} />,
     <FaIdBadge style={{ verticalAlign: 'top' }} />,

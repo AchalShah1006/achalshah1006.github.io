@@ -1,11 +1,12 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import Home from '../Home';
-import Profile from '../Profile';
-import Work from '../Work';
-import Skills from '../Skills';
+import HomePage from '../HomePage';
 import Resume from '../../components/Resume';
+import Profile from '../Profile';
+import Skills from '../Skills';
+import Work from '../Work';
+import Navigation from '../../components/Navigation';
 
 // Style React Components
 const useStyles = makeStyles({
@@ -26,9 +27,10 @@ export default function App() {
     <Router>
       <div className={classes.root}>
         <main className={classes.section}>
+          <Navigation />
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={Profile} />
+            <Route exact path="/" component={HomePage} />
+            <Route path="/profile" component={Profile} />
             <Route path="/skills" component={Skills} />
             <Route path="/work" component={Work} />
             <Route path="/resume" component={Resume} />

@@ -51,4 +51,4 @@ DataList.propTypes = {
   content: PropTypes.string,
 };
 
-export default DataList;
+export default React.memo(DataList);

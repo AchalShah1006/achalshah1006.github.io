@@ -8,9 +8,8 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import { Avatar } from '@material-ui/core';
-import user from '../../static/images/profile.jpg';
+import user from '../../images/userImage.png';
 import DataList from '../../components/DataList';
-import Navigation from '../../components/Navigation';
 
 const header = 64;
 const useStyles = makeStyles(theme => ({
@@ -67,8 +66,7 @@ const useStyles = makeStyles(theme => ({
 export default function Profile() {
   const classes = useStyles();
   return (
-    <div id="about">
-      <Navigation />
+    <div id="profile">
       <div className={classes.drawerHeader} />
       <Container fixed className={classes.root}>
         <Grid container spacing={3}>

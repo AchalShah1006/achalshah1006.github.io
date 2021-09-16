@@ -10,7 +10,6 @@ import {
   FaDatabase,
   FaCloudUploadAlt,
 } from 'react-icons/fa';
-import Navigation from '../../components/Navigation';
 import Cards from '../../components/Cards';
 
 const useStyles = makeStyles(theme => ({
@@ -34,7 +33,6 @@ export default function Skills() {
   const classes = useStyles();
   return (
     <div id="skills">
-      <Navigation />
       <div className={classes.drawerHeader} />
       <Container fixed>
         <Grid container className={classes.root}>

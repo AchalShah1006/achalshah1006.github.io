@@ -17,12 +17,12 @@ const useStyles = makeStyles({
   },
   card: {
     margin: '0.7rem auto',
-    maxWidth: '60%',
+    maxWidth: 700,
     minWidth: 300,
     minHeight: '320px',
     '@media(min-width: 600px)': {
-      maxWidth: '50%',
-      minWidth: 400,
+      maxWidth: 350,
+      minWidth: 500,
     },
   },
   media: {
@@ -34,6 +34,7 @@ const useStyles = makeStyles({
   },
   item: {
     margin: '0px auto',
+    textAlign: 'left',
   },
 });
 
@@ -41,12 +42,12 @@ function Projects(props) {
   const classes = useStyles();
 
   return (
-    <Grid item xs className={classes.item}>
+    <Grid item xs className={classes.item} direction="row">
       <Card className={classes.card}>
         <CardActionArea>
           <CardMedia className={classes.media} image={props.img} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography variant="h5" component="h2">
               {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
