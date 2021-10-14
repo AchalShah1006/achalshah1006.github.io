@@ -1,23 +1,27 @@
 import React from 'react';
 import { Box, Avatar } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import user from '../../images/userImage.png';
 import ScrollableIcons from '../../components/ScrollableIcons';
 const header = 64;
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     height: '100vh',
-    backgroundColor: '#1A1A1A',
+  },
+  drawerHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing(0, 1),
+    // necessary for content to be below app bar
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-end',
   },
   box: {
     height: `calc(100% - ${header}px)`,
-    color: 'white',
     textAlign: 'center',
     position: 'relative',
-    backgroundColor: '#1A1A1A',
   },
   startPage: {
     minHeight: `calc(100% - ${header}px)`,
@@ -49,7 +53,11 @@ const useStyles = makeStyles({
       fontSize: '32px',
     },
   },
-});
+  btn: {
+    margin: '0px 0.3rem',
+    textDecoration: 'none',
+  },
+}));
 
 function HomePage() {
   const classes = useStyles();
@@ -62,9 +70,6 @@ function HomePage() {
             <div className={classes.info}>
               <div style={{ margin: '0px auto' }}>
                 <Avatar alt="Achal Shah" src={user} className={classes.large} />
-                <Typography className={classes.text}>
-                  Coder / Developer
-                </Typography>
                 <ScrollableIcons />
               </div>
             </div>

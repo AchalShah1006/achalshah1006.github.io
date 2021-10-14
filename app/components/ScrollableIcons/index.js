@@ -44,10 +44,8 @@ TabPanel.propTypes = {
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    backgroundColor: '#1A1A1A',
   },
   iconBar: {
-    backgroundColor: '#1A1A1A',
     display: 'flex',
   },
   tabs: {

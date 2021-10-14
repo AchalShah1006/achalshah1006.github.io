@@ -26,8 +26,8 @@ export default function App() {
   return (
     <Router>
       <div className={classes.root}>
+        <Navigation />
         <main className={classes.section}>
-          <Navigation />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/profile" component={Profile} />

@@ -54,6 +54,7 @@ function Resume() {
 
   return (
     <>
+      <div className={classes.drawerHeader} />
       <h2 className={classes.heading}>Resume And Certificates</h2>
       <div style={{ width: '100%', textAlign: 'center' }}>
         <Button

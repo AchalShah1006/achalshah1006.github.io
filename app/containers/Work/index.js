@@ -36,7 +36,7 @@ export default function Work() {
           <Project
             title="Background Colour Picker"
             para="On Click Background and Navbar Colour Picker"
-            img="https://res.cloudinary.com/dayzwslj6/image/upload/v1631643541/samples/color-picker_tzegc1.png"
+            img="https://res.cloudinary.com/dayzwslj6/image/upload/v1633288514/samples/color-picker_s093sw.png"
             view="https://achalshah1006.github.io/colorPicker/"
           />
 

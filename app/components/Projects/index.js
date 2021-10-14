@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
@@ -17,12 +17,12 @@ const useStyles = makeStyles({
   },
   card: {
     margin: '0.7rem auto',
-    maxWidth: 700,
+    width: 'auto',
     minWidth: 300,
+    maxWidth: 600,
     minHeight: '320px',
     '@media(min-width: 600px)': {
-      maxWidth: 350,
-      minWidth: 500,
+      minWidth: 600,
     },
   },
   media: {
@@ -42,7 +42,7 @@ function Projects(props) {
   const classes = useStyles();
 
   return (
-    <Grid item xs className={classes.item} direction="row">
+    <Grid item xs className={classes.item}>
       <Card className={classes.card}>
         <CardActionArea>
           <CardMedia className={classes.media} image={props.img} />
@@ -76,12 +76,5 @@ function Projects(props) {
     </Grid>
   );
 }
-
-Projects.propTypes = {
-  img: PropTypes.string,
-  para: PropTypes.string,
-  title: PropTypes.string,
-  view: PropTypes.string,
-};
 
 export default Projects;

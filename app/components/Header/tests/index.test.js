@@ -1,6 +1,6 @@
 /**
  *
- * Tests for Footer
+ * Tests for Topbar
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -10,13 +10,12 @@ import React from 'react';
 import { render } from 'react-testing-library';
 // import 'jest-dom/extend-expect'; // add some helpful assertions
 
-import Footer from '../index';
+import Topbar from '../index';
 
-describe('<Footer />', () => {
+describe('<Topbar />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
-    const dispatch = jest.fn();
-    render(<Footer dispatch={dispatch} />);
+    render(<Topbar />);
     expect(spy).not.toHaveBeenCalled();
   });
 
@@ -32,7 +31,7 @@ describe('<Footer />', () => {
   it.skip('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<Footer />);
+    } = render(<Topbar />);
     expect(firstChild).toMatchSnapshot();
   });
 });

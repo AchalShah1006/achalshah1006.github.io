@@ -39,33 +39,37 @@ export default function Skills() {
           <Grid item xs className={classes.item}>
             <Cards
               comp={<FaDesktop />}
-              title="WEB DESIGN"
+              title="Frontend"
               code="HTML, CSS, JavaScript, ReactJs"
             />
           </Grid>
           <Grid item xs className={classes.item}>
             <Cards
               comp={<FaCode />}
-              title="WEB DEVELOPMENT"
-              code="Flask, Django"
+              title="Backend"
+              code="Flask, Django, NodeJs"
             />
           </Grid>
           <Grid item xs>
             <Cards
               comp={<FaBootstrap />}
-              title="UI FRAMEWORKS"
-              code="Bootstrap, Material UI"
+              title="UI Library"
+              code="Material UI, Shopify Polaris"
             />
           </Grid>
           <Grid item xs>
             <Cards
               comp={<FaLaptopCode />}
-              title="PROGRAMMING LANGUAGE"
+              title="Programming Lang"
               code="Python, C, CPP"
             />
           </Grid>
           <Grid item xs>
-            <Cards comp={<FaDatabase />} title="DATABASE" code="MySQL ,PSQL" />
+            <Cards
+              comp={<FaDatabase />}
+              title="DATABASE"
+              code="MySQL ,PSQL, MongoDB"
+            />
           </Grid>
           <Grid item xs>
             <Cards

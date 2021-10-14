@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -22,7 +22,11 @@ function DataList(props) {
   return (
     <ListItem alignItems="flex-start" className={classes.root}>
       <ListItemAvatar>
-        <Avatar alt="Remy Sharp" src={props.link} />
+        <Avatar
+          variant="square"
+          style={{ backgroundColor: '#454444' }}
+          component={props.link}
+        />
       </ListItemAvatar>
       <ListItemText
         primary={props.title}
@@ -43,12 +47,5 @@ function DataList(props) {
     </ListItem>
   );
 }
-
-DataList.propTypes = {
-  link: PropTypes.string,
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  content: PropTypes.string,
-};
 
 export default React.memo(DataList);
