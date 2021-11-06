@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     maxWidth: 600,
     minHeight: '320px',
     '@media(min-width: 600px)': {
-      minWidth: 600,
+      minWidth: 540,
     },
   },
   media: {
@@ -33,8 +33,9 @@ const useStyles = makeStyles({
     color: 'inherit',
   },
   item: {
-    margin: '0px auto',
+    margin: '1rem 0.5rem',
     textAlign: 'left',
+    maxWidth: 'max-content',
   },
 });
 

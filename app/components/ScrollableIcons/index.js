@@ -11,6 +11,7 @@ import {
   FaJsSquare,
   FaReact,
   FaPython,
+  FaNodeJs,
 } from 'react-icons/fa';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
@@ -117,6 +118,11 @@ function ScrollableIcons() {
             label="Python"
             icon={<FaPython className={classes.svg} />}
             style={{ color: 'green' }}
+          />
+          <Tab
+            label="NodeJs"
+            icon={<FaNodeJs className={classes.svg} />}
+            style={{ color: '#8cc84b' }}
           />
         </Tabs>
       </div>

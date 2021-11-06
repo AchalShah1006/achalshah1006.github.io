@@ -10,10 +10,14 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    marginTop: theme.spacing(1),
+    marginTop: '2rem',
   },
   span: {
     display: 'block',
+  },
+  avatar: {
+    backgroundColor: '#45444473',
+    padding: 5,
   },
 }));
 
@@ -24,7 +28,7 @@ function DataList(props) {
       <ListItemAvatar>
         <Avatar
           variant="square"
-          style={{ backgroundColor: '#454444' }}
+          className={classes.avatar}
           component={props.link}
         />
       </ListItemAvatar>

@@ -5,7 +5,7 @@ import { Container } from '@material-ui/core';
 import Project from '../../components/Projects';
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  grid: {
     flexGrow: 1,
   },
   drawerHeader: {
@@ -22,10 +22,10 @@ export default function Work() {
   const classes = useStyles();
 
   return (
-    <div id="work">
+    <div id="work" className={classes.root}>
       <div className={classes.drawerHeader} />
       <Container fixed>
-        <Grid container className={classes.root}>
+        <Grid container className={classes.grid}>
           <Project
             title="Portfolio"
             para="Portfolio created with Bootstrap."
@@ -61,12 +61,12 @@ export default function Work() {
             view="https://github.com/AchalShah1006/Covid19-Tracker-reactjs"
           />
 
-          <Project
+          {/* <Project
             title="Student Portal"
             para="Website for college student to check thier profiles."
             img="https://res.cloudinary.com/dayzwslj6/image/upload/v1631643541/samples/studentPortal_hwx3ep.png"
             view=""
-          />
+          /> */}
         </Grid>
       </Container>
     </div>

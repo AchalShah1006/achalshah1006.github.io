@@ -13,7 +13,7 @@ import {
 import Cards from '../../components/Cards';
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  grid: {
     flexGrow: 1,
   },
   item: {
@@ -32,10 +32,10 @@ const useStyles = makeStyles(theme => ({
 export default function Skills() {
   const classes = useStyles();
   return (
-    <div id="skills">
+    <div id="skills" className={classes.root}>
       <div className={classes.drawerHeader} />
       <Container fixed>
-        <Grid container className={classes.root}>
+        <Grid container className={classes.grid}>
           <Grid item xs className={classes.item}>
             <Cards
               comp={<FaDesktop />}
