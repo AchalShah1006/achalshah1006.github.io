@@ -106,7 +106,7 @@ export default function Profile() {
                 link={FaBriefcase}
                 title="Software Engineer"
                 heading="MLveda"
-                content="B.E. 2021 Graduate in Computer Engineering with 8.65 CGPA"
+                content="Working on technologies such as ReactJs and Shopify Polaris."
               />
               <DataList
                 link={FaGraduationCap}
@@ -118,13 +118,13 @@ export default function Profile() {
                 link={FaUniversity}
                 title="Higher Secondary School"
                 heading="Florescent Public School"
-                content="Completed 12th grade from Florescent Public school with 76.31% in year-2017"
+                content="Completed 12th grade from Florescent Public school with 76.31% (2015-2017)"
               />
               <DataList
                 link={FaSchool}
                 title="10th Grade"
                 heading="Nutan English School"
-                content="Completed 10th grade from Nutan English school with 78.50% in year-2015"
+                content="Completed 10th grade from Nutan English school with 78.50% in (2014-2015)"
               />
             </List>
           </Grid>

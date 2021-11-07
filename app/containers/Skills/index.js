@@ -53,8 +53,8 @@ export default function Skills() {
           <Grid item xs>
             <Cards
               comp={<FaBootstrap />}
-              title="UI Library"
-              code="Material UI, Shopify Polaris"
+              title="UI Libraries"
+              code="Material UI, Bootstrap, Polaris"
             />
           </Grid>
           <Grid item xs>
