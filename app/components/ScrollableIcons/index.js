@@ -68,7 +68,7 @@ function ScrollableIcons() {
 
   useEffect(() => {
     let val;
-    if (value === 4) {
+    if (value === 5) {
       val = setTimeout(() => {
         setValue(0);
       }, 1500);
